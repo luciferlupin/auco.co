@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUCO — Redefining the Drive</title>
+  <meta name="description" content="At AUCO, we believe your car deserves more than just the ordinary—it deserves innovation that transforms every drive into an extraordinary experience.">
+  <!-- Fonts: Inter for Apple SF Pro minimal aesthetics -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Background Ambient Glow -->
+  <div class="ambient-glow"></div>
+
+  <!-- Header Navigation -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="#home" class="logo-link" id="nav-logo" aria-label="AUCO Home">
+        <svg class="auco-logo" viewBox="0 0 460 90" xmlns="http://www.w3.org/2000/svg">
+          <!-- A / Delta -->
+          <path d="M 50 20 L 85 78 A 3 3 0 0 1 82 82 L 18 82 A 3 3 0 0 1 15 78 Z" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- U -->
+          <path d="M 140 20 L 140 52 A 26 26 0 0 0 192 52 L 192 20" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+          <!-- C -->
+          <path d="M 300 24 L 272 24 A 26 26 0 0 0 272 76 L 300 76" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+          <!-- O -->
+          <circle cx="395" cy="50" r="28" fill="none" stroke="currentColor" stroke-width="10"/>
+        </svg>
+      </a>
+
+      <!-- 3-Page Nav Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <button class="nav-link active" data-target="page-home" id="btn-nav-home">Home</button>
+        <button class="nav-link" data-target="page-about" id="btn-nav-about">About Us</button>
+        <button class="nav-link" data-target="page-contact" id="btn-nav-contact">Contact</button>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn" id="btn-preorder">Reserve</button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main id="app-content">
+
+    <!-- PAGE 1: HOME PAGE -->
+    <section id="page-home" class="page-view active">
+      
+      <!-- Full-Screen Hero Section with Full-Size Background Video -->
+      <section class="minimal-hero full-hero reveal">
+        <div class="hero-bg-video-wrapper">
+          <video src="AC2.mp4" autoplay loop muted playsinline class="hero-bg-video"></video>
+          <div class="hero-bg-overlay"></div>
+        </div>
+
+        <div class="container text-center hero-text-block">
+          <span class="hero-eyebrow">AUCO AUTOMOTIVE</span>
+          <h1 class="hero-title">Redefining the drive.</h1>
+          <p class="hero-subtext">
+            At AUCO, we believe your car deserves more than just the ordinary—it deserves innovation that transforms every drive into an extraordinary experience.
+          </p>
+          <div class="hero-actions">
+            <button class="link-btn" data-target="page-about">Learn about AUCO &rarr;</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 1. Minimal Mantra / Brand Statement Section -->
+      <section class="minimal-quote-section reveal">
+        <div class="container small-container text-center">
+          <p class="quote-text">
+            "We are redefining the automotive accessories industry by seamlessly blending <span class="white-text">affordability</span>, <span class="white-text">functionality</span>, and a <span class="white-text">futuristic vision</span> to elevate your journey."
+          </p>
+        </div>
+      </section>
+
+      <!-- 2. Products Overview Section -->
+      <section class="products-section reveal">
+        <div class="container">
+          <div class="section-label">PRODUCTS</div>
+          <h2 class="section-heading">Designed for the future. Available today.</h2>
+
+          <div class="minimal-products-grid">
+            
+            <!-- Product 1: Audio - Speaker -->
+            <article class="product-item reveal reveal-delay-1">
+              <div class="product-media">
+                <img src="assets/audio-system.png" alt="AUCO Speaker" class="product-img">
+              </div>
+              <div class="product-info">
+                <span class="product-cat">AUDIO</span>
+                <h3 class="product-title">SonicPulse™ Speaker</h3>
+                <p class="product-desc">Precision-tuned 360-degree spatial acoustic speaker crafted for crystal-clear cabin audio & deep bass.</p>
+              </div>
+            </article>
+
+            <!-- Product 2: Lighting - LED 340 -->
+            <article class="product-item reveal reveal-delay-2">
+              <div class="product-media">
+                <img src="assets/led-lighting.png" alt="AUCO Ambient LED 340" class="product-img">
+              </div>
+              <div class="product-info">
+                <span class="product-cat">LIGHTING</span>
+                <h3 class="product-title">Ambient LED 340</h3>
+                <p class="product-desc">Ultra-flexible 340-LED dynamic ambient light strip with multi-zone custom color spectrum control.</p>
+              </div>
+            </article>
+
+            <!-- Product 3: Infotainment - Front Fascia -->
+            <article class="product-item reveal reveal-delay-3">
+              <div class="product-media">
+                <img src="assets/smart-cockpit.png" alt="AUCO Digital Front Fascia" class="product-img">
+              </div>
+              <div class="product-info">
+                <span class="product-cat">INFOTAINMENT</span>
+                <h3 class="product-title">Digital Front Fascia</h3>
+                <p class="product-desc">High-resolution OLED front fascia display with telemetry widgets & smart cockpit integration.</p>
+              </div>
+            </article>
+
+            <!-- Product 4: AUCO Care - Vacuum Cleaner -->
+            <article class="product-item reveal reveal-delay-4">
+              <div class="product-media">
+                <img src="assets/vacuum-cleaner.png" alt="AUCO AirClean Vacuum Cleaner" class="product-img">
+              </div>
+              <div class="product-info">
+                <span class="product-cat">AUCO CARE</span>
+                <h3 class="product-title">AirClean Vacuum Cleaner</h3>
+                <p class="product-desc">Ultra-portable cordless high-suction vacuum featuring dual HEPA filtration and aluminum body finish.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Closing Mantra Banner -->
+      <section class="closing-section reveal">
+        <div class="container small-container text-center">
+          <h2 class="closing-text">
+            Because driving isn't just about reaching your destination.<br>It's about making the journey extraordinary.
+          </h2>
+          <button class="btn" id="btn-reserve-bottom">Reserve Access</button>
+        </div>
+      </section>
+
+    </section>
+
+
+    <!-- PAGE 2: ABOUT US PAGE -->
+    <section id="page-about" class="page-view">
+      
+      <!-- 4. About Hero Section -->
+      <section class="about-hero-section reveal">
+        <div class="container small-container text-center">
+          <span class="hero-eyebrow">ABOUT AUCO</span>
+          <h1 class="hero-title about-hero-title">Innovation accessible to every drive.</h1>
+          <p class="about-lead">
+            At AUCO, we believe your car deserves more than just the ordinary—it deserves innovation that transforms every drive into an extraordinary experience.
+          </p>
+        </div>
+      </section>
+
+      <!-- Brand Narrative Section -->
+      <section class="narrative-section reveal">
+        <div class="container">
+          <div class="narrative-grid">
+            <div class="narrative-content">
+              <h2 class="narrative-title">Our Philosophy</h2>
+              <p class="narrative-body">
+                We are redefining the automotive accessories industry by seamlessly blending affordability, functionality, and a futuristic vision to elevate your journey.
+              </p>
+              <p class="narrative-body">
+                From immersive audio systems to advanced LED lighting, our products are designed for the future—available to you today.
+              </p>
+              <blockquote class="narrative-quote">
+                "Luxury should be accessible, and at AUCO, affordability never means compromise."
+              </blockquote>
+              <p class="narrative-body">
+                We are committed to delivering premium-quality, cutting-edge car accessories that enhance both performance and aesthetics, making innovation a part of everyday driving.
+              </p>
+            </div>
+
+            <div class="narrative-image-wrapper reveal reveal-delay-2">
+              <img src="assets/led-lighting.png" alt="AUCO Interior Engineering" class="narrative-img">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Three Pillars Grid -->
+      <section class="pillars-section reveal">
+        <div class="container">
+          <div class="pillars-row">
+            <div class="pillar-box reveal reveal-delay-1">
+              <span class="pillar-tag">01 / AFFORDABILITY</span>
+              <h3 class="pillar-heading">Accessible Luxury</h3>
+              <p class="pillar-desc">Delivering premium automotive craftsmanship without unneeded luxury markups.</p>
+            </div>
+
+            <div class="pillar-box reveal reveal-delay-2">
+              <span class="pillar-tag">02 / FUNCTIONALITY</span>
+              <h3 class="pillar-heading">Seamless Integration</h3>
+              <p class="pillar-desc">Engineered to fit existing vehicle interiors with plug-and-play ease.</p>
+            </div>
+
+            <div class="pillar-box reveal reveal-delay-3">
+              <span class="pillar-tag">03 / VISION</span>
+              <h3 class="pillar-heading">Designed for Tomorrow</h3>
+              <p class="pillar-desc">Future-ready technology available for driver enthusiasts today.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Minimal Newsletter Form -->
+      <section class="minimal-newsletter-section reveal">
+        <div class="container small-container text-center">
+          <h3 class="newsletter-heading">Stay informed.</h3>
+          <p class="newsletter-sub">Receive updates on new product fitments and early availability.</p>
+          
+          <form id="about-newsletter-form" class="minimal-form">
+            <div class="form-row">
+              <input type="email" id="newsletter-email" class="minimal-input" placeholder="Email address" required>
+              <button type="submit" class="btn">Submit</button>
+            </div>
+            <div id="newsletter-message" class="form-status"></div>
+          </form>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- PAGE 3: CONTACT PAGE -->
+    <section id="page-contact" class="page-view">
+      
+      <!-- Contact Hero Section -->
+      <section class="about-hero-section reveal">
+        <div class="container small-container text-center">
+          <span class="hero-eyebrow">GET IN TOUCH</span>
+          <h1 class="hero-title about-hero-title">We are here to help.</h1>
+          <p class="about-lead">
+            Have questions about product fitments, custom vehicle installations, or pre-orders? Connect with our engineering and support team directly.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Main Content Section -->
+      <section class="contact-section reveal">
+        <div class="container">
+          <div class="contact-grid">
+            
+            <!-- Contact Info Cards -->
+            <div class="contact-info-wrapper">
+              <div class="contact-card reveal reveal-delay-1">
+                <div class="contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact-details">
+                  <h4>Email Support</h4>
+                  <p>support@auco.auto</p>
+                  <p class="sub-detail">Inquiries & Fitments</p>
+                </div>
+              </div>
+
+              <div class="contact-card reveal reveal-delay-2">
+                <div class="contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="contact-details">
+                  <h4>Direct Line</h4>
+                  <p>+1 (800) 555-AUCO</p>
+                  <p class="sub-detail">Mon – Fri: 9:00 AM – 6:00 PM PST</p>
+                </div>
+              </div>
+
+              <div class="contact-card reveal reveal-delay-3">
+                <div class="contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact-details">
+                  <h4>Headquarters</h4>
+                  <p>AUCO Automotive Tech</p>
+                  <p class="sub-detail">Silicon Valley, CA 94025</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper reveal reveal-delay-2">
+              <form id="contact-form" class="minimal-contact-form">
+                <h3 class="contact-form-title">Send a Message</h3>
+                
+                <div class="field-row">
+                  <div class="field">
+                    <label for="contact-name" class="field-label">Name</label>
+                    <input type="text" id="contact-name" class="minimal-input" placeholder="Your full name" required>
+                  </div>
+                  <div class="field">
+                    <label for="contact-email" class="field-label">Email</label>
+                    <input type="email" id="contact-email" class="minimal-input" placeholder="name@example.com" required>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="contact-category" class="field-label">Product Interest</label>
+                  <select id="contact-category" class="minimal-select" required>
+                    <option value="" disabled selected>Select category</option>
+                    <option value="Audio">Audio — Speaker</option>
+                    <option value="Lighting">Lighting — LED 340</option>
+                    <option value="Infotainment">Infotainment — Front Fascia</option>
+                    <option value="AUCO Care">AUCO Care — Vacuum Cleaner</option>
+                    <option value="General">General Inquiry</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="contact-message" class="field-label">Message</label>
+                  <textarea id="contact-message" class="minimal-textarea" rows="4" placeholder="How can we assist with your vehicle?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-full">Send Message</button>
+                <div id="contact-status" class="form-status"></div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+  </main>
+
+  <!-- Modal Component for Product Specs -->
+  <div class="modal-backdrop" id="product-modal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close">&times;</button>
+      <div id="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- Reserve Modal Component -->
+  <div class="modal-backdrop" id="preorder-modal">
+    <div class="modal-box modal-narrow text-center">
+      <button class="modal-close-btn" id="preorder-close" aria-label="Close">&times;</button>
+      
+      <svg class="auco-logo modal-logo" viewBox="0 0 460 90" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 50 20 L 85 78 A 3 3 0 0 1 82 82 L 18 82 A 3 3 0 0 1 15 78 Z" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 140 20 L 140 52 A 26 26 0 0 0 192 52 L 192 20" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+        <path d="M 300 24 L 272 24 A 26 26 0 0 0 272 76 L 300 76" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+        <circle cx="395" cy="50" r="28" fill="none" stroke="currentColor" stroke-width="10"/>
+      </svg>
+
+      <h3 class="modal-heading">Reserve AUCO</h3>
+      <p class="modal-sub">Be among the first to experience our next-generation automotive accessories.</p>
+
+      <form id="preorder-form" class="minimal-preorder-form">
+        <div class="field">
+          <input type="text" id="car-make" class="minimal-input" placeholder="Vehicle Make & Model" required>
+        </div>
+        <div class="field">
+          <input type="email" id="user-email" class="minimal-input" placeholder="Your Email Address" required>
+        </div>
+        <button type="submit" class="btn btn-full">Submit Reservation</button>
+        <div id="preorder-message" class="form-status"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Minimal Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <svg class="auco-logo footer-logo" viewBox="0 0 460 90" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 50 20 L 85 78 A 3 3 0 0 1 82 82 L 18 82 A 3 3 0 0 1 15 78 Z" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 140 20 L 140 52 A 26 26 0 0 0 192 52 L 192 20" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+          <path d="M 300 24 L 272 24 A 26 26 0 0 0 272 76 L 300 76" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+          <circle cx="395" cy="50" r="28" fill="none" stroke="currentColor" stroke-width="10"/>
+        </svg>
+        <p class="footer-copy">&copy; 2026 AUCO Automotive. All rights reserved.</p>
+      </div>
+
+      <div class="footer-right">
+        <button class="footer-nav-link" data-target="page-home">Home</button>
+        <button class="footer-nav-link" data-target="page-about">About Us</button>
+        <button class="footer-nav-link" data-target="page-contact">Contact</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
