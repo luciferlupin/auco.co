@@ -1119,5 +1119,73 @@ body {
 @media (max-width: 900px) {
   .contact-grid {
     grid-template-columns: 1fr;
+    gap: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .contact-info-wrapper {
+    gap: 0.9rem;
+  }
+
+  .contact-card {
+    padding: 1.1rem 1.2rem;
+    border-radius: 14px;
+    gap: 1rem;
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .contact-details h4 {
+    font-size: 0.9rem;
+  }
+
+  .contact-details p {
+    font-size: 0.82rem;
+  }
+
+  .contact-form-wrapper {
+    padding: 1.4rem 1.2rem;
+    border-radius: 16px;
+  }
+
+  .contact-form-title {
+    font-size: 1.15rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .minimal-contact-form .field-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .minimal-input, .minimal-select, .minimal-textarea {
+    font-size: 1rem; /* Prevents auto-zoom on mobile safari */
+    padding: 0.8rem 0.9rem;
+    min-height: 46px;
+    border-radius: 10px;
+  }
+
+  .minimal-textarea {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 1rem;
+  }
+
+  .contact-form-wrapper {
+    padding: 1.2rem 1rem;
   }
 }
